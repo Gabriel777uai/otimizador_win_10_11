@@ -1,0 +1,21 @@
+﻿============================================================
+SERVIÇOS AUTOMÁTICOS PARADOS (INVESTIGAÇÃO)
+============================================================
+
+Name                                     DisplayName                                                                Sta
+                                                                                                                    te 
+----                                     -----------                                                                ---
+AsusUpdateCheck                          AsusUpdateCheck                                                            Sto
+edgeupdate                               Microsoft Edge Update Service (edgeupdate)                                 Sto
+ekrn                                     ESET Service                                                               Sto
+GoogleUpdaterInternalService152.0.7933.0 Google Updater Internal Service (GoogleUpdaterInternalService152.0.7933.0) Sto
+GoogleUpdaterService152.0.7933.0         Google Updater Service (GoogleUpdaterService152.0.7933.0)                  Sto
+gpsvc                                    Cliente da Política de Grupo                                               Sto
+gupdate                                  Serviço do Google Update (gupdate)                                         Sto
+MapsBroker                               Gerenciador de Mapas Baixados                                              Sto
+MSSQLSERVER                              SQL Server (MSSQLSERVER)                                                   Sto
+NativePushService                        Wondershare Native Push Service                                            Sto
+sppsvc                                   Proteção de Software                                                       Sto
+
+
+

@@ -1,0 +1,34 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20260925133119
+Nome de Usuário: BRASILC\suporte
+Executar como Usuário: BRASILC\suporte
+Nome da Configuração: 
+Computador: TI-004 (Microsoft Windows NT 10.0.19045.0)
+Aplicativo Host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\wamp64\www\project-agente-ia\Windows-Support-Toolkit.ps1'
+ID do Processo: 22000
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[INFO]
+Ambiente do Windows Support Toolkit inicializado com sucesso.
+======================================================================
+ [CRITICAL] PRIVILÉGIOS ADMINISTRATIVOS ELEVADOS NECESSÁRIOS
+======================================================================
+
+ O Windows Support Toolkit necessita de permissões de Administrador
+ para interagir com o subsistema de armazenamento, serviços do Windows,
+ registro de sistema, ferramentas DISM/SFC e Microsoft Defender.
+
+
+ [INFO] Solicitando elevação via Controle de Conta de Usuário (UAC)...
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20260925133128
+**********************

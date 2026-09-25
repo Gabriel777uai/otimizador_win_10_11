@@ -1,0 +1,17 @@
+﻿============================================================
+WINDOWS SUPPORT TOOLKIT - DIAGNÓSTICO DO SISTEMA
+Desenvolvido por: Gabriel Souza Barros
+Versão: 1.0
+Data/Hora: 09/24/2026 18:08:11
+============================================================
+
+COMPUTADOR     : TI-004
+USUÁRIO        : BRASILC\suporte
+SISTEMA OPERACIONAL: Microsoft Windows 10 Pro (64 bits)
+VERSÃO / BUILD : 10.0.19045 (Build 19045)
+FABRICANTE     : ASUS
+MODELO         : System Product Name
+PLACA-MÃE      : ASUSTeK COMPUTER INC. PRIME A520M-E
+BIOS           : American Megatrends Inc. 3205 (08/13/2023 21:00:00)
+ÚLTIMO BOOT    : 09/15/2026 08:06:31
+UPTIME         : 9d 10h 1m

@@ -1,0 +1,25 @@
+﻿============================================================
+INTEGRIDADE E ATUALIZAÇÕES DO WINDOWS
+============================================================
+HOTFIXES RECENTES:
+
+HotFixID  Description     InstalledOn        
+--------  -----------     -----------        
+KB5126256 Security Update 15/09/2026 00:00:00
+KB5072653 Security Update 25/11/2025 00:00:00
+KB5066791 Security Update 20/10/2025 00:00:00
+KB5066130 Update          17/10/2025 00:00:00
+KB5066790 Security Update 17/10/2025 00:00:00
+KB5063979 Update          12/09/2025 00:00:00
+KB5063261 Update          15/08/2025 00:00:00
+KB5063706 Security Update 11/07/2025 00:00:00
+KB5059504 Update          16/06/2025 00:00:00
+KB5058526 Security Update 16/05/2025 00:00:00
+KB5054682 Update          11/04/2025 00:00:00
+KB5052916 Update          14/03/2025 00:00:00
+KB5050111 Update          14/02/2025 00:00:00
+KB5050388 Security Update 17/01/2025 00:00:00
+KB5046823 Update          18/11/2024 00:00:00
+
+
+

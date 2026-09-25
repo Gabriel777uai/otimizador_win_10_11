@@ -1,0 +1,164 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20260925093929
+Nome de Usuário: BRASILC\suporte
+Executar como Usuário: BRASILC\suporte
+Nome da Configuração: 
+Computador: TI-004 (Microsoft Windows NT 10.0.19045.0)
+Aplicativo Host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\wamp64\www\project-agente-ia\Windows-Support-Toolkit.ps1 -TargetDrive C:
+ID do Processo: 28840
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[INFO]
+Ambiente do Windows Support Toolkit inicializado com sucesso.
+True
+======================================================================
+ WINDOWS SUPPORT TOOLKIT
+ Ferramenta Profissional de Suporte Windows
+ Desenvolvido por: Gabriel Souza Barros
+ Versão: 1.0
+======================================================================
+ COMPUTADOR :
+TI-004
+  |  USUÁRIO :
+BRASILC\suporte
+ WINDOWS    :
+Microsoft Windows 10 Pro (64 bits)
+  |  BUILD   :
+19045
+ PROCESSADOR:
+AMD Ryzen 5 4500 6-Core Processor
+ MEMÓRIA    :
+15,8 GB Total (5,2 GB Livre / 67,3% Usado)
+ UPTIME     :
+10d 1h 32m
+----------------------------------------------------------------------
+ [ 1 ] Diagnóstico completo do computador
+ [ 2 ] Diagnóstico e saúde dos discos
+ [ 3 ] Verificação CHKDSK (Scan / Spotfix / F / R)
+ [ 4 ] Reparação de imagem DISM (Check / Restore / Component)
+ [ 5 ] Reparação de arquivos de sistema SFC (/scannow)
+ [ 6 ] Limpeza de arquivos temporários
+ [ 7 ] Limpeza de componentes do Windows (WinSxS)
+ [ 8 ] Limpeza da Lixeira
+ [ 9 ] Limpeza de cache DNS
+ [10 ] Otimização de SSD/HDD (TRIM / Defrag Inteligente)
+ [11 ] Diagnóstico de memória RAM e processos
+ [12 ] Diagnóstico de CPU e GPU
+ [13 ] Diagnóstico de programas de inicialização
+ [14 ] Diagnóstico de serviços do Windows
+ [15 ] Diagnóstico de eventos do Windows (Event Viewer)
+ [16 ] Diagnóstico de conectividade e rede
+ [17 ] Reparação avançada de rede (Winsock / TCP-IP Reset)
+ [18 ] Atualização de assinaturas do Defender
+ [19 ] Verificação rápida do Defender (Quick Scan)
+ [20 ] Verificação completa de malware (Full Scan)
+ [21 ] Microsoft Defender Offline (Reboot WDO)
+ [22 ] Histórico de ameaças detectadas pelo Defender
+ [23 ] Limpeza profunda controlada
+ [24 ] Diagnóstico do Windows Update
+ [25 ] Exportar relatório completo (TXT e HTML)
+ [26 ] Diagnóstico de recursos de IA do Windows
+ [27 ] Gerenciar / Desativar recursos de IA (com backup)
+ [28 ] Otimização geral segura
+ [29 ] Criar ponto de restauração do sistema
+ [30 ] Executar manutenção completa recomendada (18 Fases)
+ [ 0 ] Sair do Toolkit
+----------------------------------------------------------------------
+
+======================================================================
+  LIMPEZA SEGURA DE ARQUIVOS TEMPORÁRIOS
+======================================================================
+
+[INFO]
+Iniciando análise preliminar de arquivos temporários e caches dispensáveis.
+ Calculando volume de arquivos em locais temporários seguros...
+ Locais Analisados:
+  Pasta Temp Usuário  (C:\Users\suporte\AppData\Local\Temp) : 50741 arquivos (~8888,3 MB)
+  Pasta Temp Windows  (C:\Windows\Temp) : 161 arquivos (~29,66 MB)
+  Cache de Miniaturas (Thumbnails Explorer)
+  Lixeira do Windows
+  Utilitário Cleanmgr (Limpeza de Disco Oficial)
+ Estimativa inicial de liberação direta: ~8917.96 MB
+
+ Regras de Segurança Ativas:
+  - Nenhum arquivo pessoal ou documento de usuário será tocado.
+  - Arquivos atualmente bloqueados ou em uso por processos serão ignorados com segurança.
+  - System32, WinSxS e diretórios de programas NUNCA serão limpos manualmente.
+
+
+ [INFO] Removendo arquivos temporários do usuário...
+ [INFO] Removendo arquivos temporários do sistema operacional...
+ [INFO] Limpando cache de miniaturas do Windows Explorer...
+ [INFO] Esvaziando a Lixeira em todas as unidades...
+ [INFO] Executando o utilitário nativo de Limpeza de Disco (cleanmgr.exe)...
+[OK]
+Limpeza concluída! Espaço adicional livre identificado na unidade C: ~8832.14 MB.
+
+ Pressione ENTER para continuar...
+======================================================================
+ WINDOWS SUPPORT TOOLKIT
+ Ferramenta Profissional de Suporte Windows
+ Desenvolvido por: Gabriel Souza Barros
+ Versão: 1.0
+======================================================================
+ COMPUTADOR :
+TI-004
+  |  USUÁRIO :
+BRASILC\suporte
+ WINDOWS    :
+Microsoft Windows 10 Pro (64 bits)
+  |  BUILD   :
+19045
+ PROCESSADOR:
+AMD Ryzen 5 4500 6-Core Processor
+ MEMÓRIA    :
+15,8 GB Total (5,2 GB Livre / 67,3% Usado)
+ UPTIME     :
+10d 1h 32m
+----------------------------------------------------------------------
+ [ 1 ] Diagnóstico completo do computador
+ [ 2 ] Diagnóstico e saúde dos discos
+ [ 3 ] Verificação CHKDSK (Scan / Spotfix / F / R)
+ [ 4 ] Reparação de imagem DISM (Check / Restore / Component)
+ [ 5 ] Reparação de arquivos de sistema SFC (/scannow)
+ [ 6 ] Limpeza de arquivos temporários
+ [ 7 ] Limpeza de componentes do Windows (WinSxS)
+ [ 8 ] Limpeza da Lixeira
+ [ 9 ] Limpeza de cache DNS
+ [10 ] Otimização de SSD/HDD (TRIM / Defrag Inteligente)
+ [11 ] Diagnóstico de memória RAM e processos
+ [12 ] Diagnóstico de CPU e GPU
+ [13 ] Diagnóstico de programas de inicialização
+ [14 ] Diagnóstico de serviços do Windows
+ [15 ] Diagnóstico de eventos do Windows (Event Viewer)
+ [16 ] Diagnóstico de conectividade e rede
+ [17 ] Reparação avançada de rede (Winsock / TCP-IP Reset)
+ [18 ] Atualização de assinaturas do Defender
+ [19 ] Verificação rápida do Defender (Quick Scan)
+ [20 ] Verificação completa de malware (Full Scan)
+ [21 ] Microsoft Defender Offline (Reboot WDO)
+ [22 ] Histórico de ameaças detectadas pelo Defender
+ [23 ] Limpeza profunda controlada
+ [24 ] Diagnóstico do Windows Update
+ [25 ] Exportar relatório completo (TXT e HTML)
+ [26 ] Diagnóstico de recursos de IA do Windows
+ [27 ] Gerenciar / Desativar recursos de IA (com backup)
+ [28 ] Otimização geral segura
+ [29 ] Criar ponto de restauração do sistema
+ [30 ] Executar manutenção completa recomendada (18 Fases)
+ [ 0 ] Sair do Toolkit
+----------------------------------------------------------------------
+
+ Encerrando o Windows Support Toolkit... Até logo!
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20260925094326
+**********************

@@ -1,0 +1,52 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20260925092733
+Nome de Usuário: BRASILC\suporte
+Executar como Usuário: BRASILC\suporte
+Nome da Configuração: 
+Computador: TI-004 (Microsoft Windows NT 10.0.19045.0)
+Aplicativo Host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Windows-Support-Toolkit.ps1 -Mode Report -SkipElevationCheck
+ID do Processo: 15824
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[INFO]
+Ambiente do Windows Support Toolkit inicializado com sucesso.
+[WARNING]
+Verificação de privilégio ignorada via parâmetro -SkipElevationCheck.
+True
+======================================================================
+ WINDOWS SUPPORT TOOLKIT
+ Ferramenta Profissional de Suporte Windows
+ Desenvolvido por: Gabriel Souza Barros
+ Versão: 1.0
+======================================================================
+ COMPUTADOR :
+TI-004
+  |  USUÁRIO :
+BRASILC\suporte
+ WINDOWS    :
+Microsoft Windows 10 Pro (64 bits)
+  |  BUILD   :
+19045
+ PROCESSADOR:
+AMD Ryzen 5 4500 6-Core Processor
+ MEMÓRIA    :
+15,8 GB Total (2,6 GB Livre / 83,8% Usado)
+ UPTIME     :
+10d 1h 21m
+----------------------------------------------------------------------
+
+======================================================================
+  GERAÇÃO DE RELATÓRIO TÉCNICO COMPLETO
+======================================================================
+
+[INFO]
+Iniciando compilação do relatório profissional de suporte.
+ Coletando dados para exportação em C:\wamp64\www\project-agente-ia\SupportReports\2026-09-25_09-27-35...

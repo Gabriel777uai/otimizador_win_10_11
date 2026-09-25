@@ -1,0 +1,69 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20260924180808
+Nome de Usuário: BRASILC\suporte
+Executar como Usuário: BRASILC\suporte
+Nome da Configuração: 
+Computador: TI-004 (Microsoft Windows NT 10.0.19045.0)
+Aplicativo Host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Windows-Support-Toolkit.ps1 -Mode Report -SkipElevationCheck
+ID do Processo: 26076
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[INFO]
+Ambiente do Windows Support Toolkit inicializado com sucesso.
+[WARNING]
+Verificação de privilégio ignorada via parâmetro -SkipElevationCheck.
+True
+======================================================================
+ WINDOWS SUPPORT TOOLKIT
+ Ferramenta Profissional de Suporte Windows
+ Desenvolvido por: Gabriel Souza Barros
+ Versão: 1.0
+======================================================================
+ COMPUTADOR :
+TI-004
+  |  USUÁRIO :
+BRASILC\suporte
+ WINDOWS    :
+Microsoft Windows 10 Pro (64 bits)
+  |  BUILD   :
+19045
+ PROCESSADOR:
+AMD Ryzen 5 4500 6-Core Processor
+ MEMÓRIA    :
+15,8 GB Total (6,2 GB Livre / 60,9% Usado)
+ UPTIME     :
+9d 10h 1m
+----------------------------------------------------------------------
+
+======================================================================
+  GERAÇÃO DE RELATÓRIO TÉCNICO COMPLETO
+======================================================================
+
+[INFO]
+Iniciando compilação do relatório profissional de suporte.
+ Coletando dados para exportação em C:\wamp64\www\project-agente-ia\SupportReports\2026-09-24_18-08-10...
+PS>TerminatingError(Export-SupportReport): "O termo 'try' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente."
+[CRITICAL]
+Erro fatal não tratado durante a execução: O termo 'try' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+ Detalhes da Exceção: System.Management.Automation.CommandNotFoundException: O termo 'try' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+   em System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   em System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)
+   em System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)
+   em System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)
+   em System.Management.Automation.Interpreter.Interpreter.Run(InterpretedFrame frame)
+   em System.Management.Automation.Interpreter.LightLambda.RunVoid1[T0](T0 arg0)
+   em System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   em System.Management.Automation.PSScriptCmdlet.DoEndProcessing()
+   em System.Management.Automation.CommandProcessorBase.Complete()
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20260924180813
+**********************

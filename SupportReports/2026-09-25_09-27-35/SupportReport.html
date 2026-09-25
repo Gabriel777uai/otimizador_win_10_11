@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Técnico - TI-004</title>
+    <style>
+        :root {
+            --bg-main: #0b1120;
+            --bg-card: #1e293b;
+            --bg-card-alt: #162032;
+            --border: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --ok: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 30px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge-ok { background: rgba(16, 185, 129, 0.2); color: var(--ok); border: 1px solid var(--ok); }
+        .badge-warn { background: rgba(245, 158, 11, 0.2); color: var(--warning); border: 1px solid var(--warning); }
+        .badge-crit { background: rgba(239, 68, 68, 0.2); color: var(--danger); border: 1px solid var(--danger); }
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 24px; }
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .card h3 {
+            color: var(--accent);
+            font-size: 16px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .table-responsive { overflow-x: auto; margin-top: 10px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+        th, td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        th { background-color: rgba(51, 65, 85, 0.4); color: var(--text-muted); }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                <div>
+                    <h1 style="color: var(--accent); font-size: 26px;">WINDOWS SUPPORT TOOLKIT</h1>
+                    <p style="color: var(--text-muted); font-size: 14px;">Relatório Técnico de Diagnóstico e Suporte de Infraestrutura</p>
+                </div>
+                <div style="text-align: right;">
+                    <p><strong>Desenvolvido por:</strong> Gabriel Souza Barros</p>
+                    <p style="color: var(--text-muted); font-size: 12px;">Data da Emissão: 25/09/2026 09:27:42</p>
+                </div>
+            </div>
+            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--border); display: flex; gap: 30px; flex-wrap: wrap; font-size: 14px;">
+                <div><strong>Computador:</strong> TI-004</div>
+                <div><strong>Operador:</strong> BRASILC\suporte</div>
+                <div><strong>Sistema:</strong> Microsoft Windows 10 Pro (Build 19045)</div>
+                <div><strong>Tempo Ligado (Uptime):</strong> 10d 1h 21m</div>
+            </div>
+        </header>
+
+        <div class="grid-cards">
+            <div class="card" style="margin-bottom:0;">
+                <h3>Integridade do SO</h3>
+                <p><strong>Versão:</strong> 10.0.19045</p>
+                <p><strong>Arquitetura:</strong> 64 bits</p>
+                <div style="margin-top: 10px;">
+                    <span class="badge badge-ok">Kernel Operacional</span>
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom:0;">
+                <h3>Armazenamento</h3>
+                <p><strong>Discos:</strong> S.M.A.R.T. Íntegro</p>
+                <p><strong>Trim / Otimização:</strong> Suportado</p>
+                <div style="margin-top: 10px;">
+                    <span class="badge badge-ok">Saúde Física OK</span>
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom:0;">
+                <h3>Segurança</h3>
+                <p><strong>Defender:</strong> <span class='badge badge-warn'>Parado / Terceiros</span></p>
+                <p><strong>UAC:</strong> Proteção Ativa</p>
+            </div>
+
+            <div class="card" style="margin-bottom:0;">
+                <h3>Conectividade</h3>
+                <p><strong>Gateway e DNS:</strong> Resolução OK</p>
+                <div style="margin-top: 10px;">
+                    <span class="badge badge-ok">Internet Conectada</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Especificações de Hardware</h3>
+            <div class="table-responsive">
+                <table>
+                    <tr><th>Componente</th><th>Especificação</th></tr>
+                    <tr><td>Processador (CPU)</td><td>AMD Ryzen 5 4500 6-Core Processor (6 Físicos / 12 Threads)</td></tr>
+                    <tr><td>Memória RAM</td><td>15.8 GB Total (2.56 GB Livre - 83.8% em uso)</td></tr>
+                    <tr><td>Placa-Mãe</td><td>ASUSTeK COMPUTER INC. PRIME A520M-E</td></tr>
+                    <tr><td>BIOS / Firmware</td><td>American Megatrends Inc. 3205 (08/13/2023 21:00:00)</td></tr>
+                    <tr><td>Placa de Vídeo (GPU)</td><td>NVIDIA GeForce GTX 1650</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Armazenamento e Volumes Lógicos</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr><th>Volume</th><th>Sistema de Arquivos</th><th>Tamanho Total</th><th>Espaço Livre</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Unidade C:</strong></td><td>NTFS</td><td>930.9 GB</td><td>585.1 GB</td><td><span class='badge badge-ok'>62.9% Livre</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Processos com Maior Consumo de Memória RAM</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr><th>Nome do Processo</th><th>PID</th><th>Memória Utilizada (Working Set)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>vmmem</td><td>14356</td><td>1982.5 MB</td></tr><tr><td>Antigravity IDE</td><td>27640</td><td>822.3 MB</td></tr><tr><td>chrome</td><td>30508</td><td>790.7 MB</td></tr><tr><td>Code</td><td>8612</td><td>560.9 MB</td></tr><tr><td>Memory Compression</td><td>1808</td><td>504.3 MB</td></tr><tr><td>Code</td><td>23716</td><td>383.5 MB</td></tr><tr><td>php</td><td>1456</td><td>331.5 MB</td></tr><tr><td>chrome</td><td>30604</td><td>325 MB</td></tr><tr><td>msedgewebview2</td><td>23732</td><td>290.7 MB</td></tr><tr><td>chrome</td><td>5804</td><td>235.7 MB</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Eventos Críticos e Erros do Windows (Últimos 7 dias)</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr><th>Data/Hora</th><th>Origem (Provider)</th><th>ID</th><th>Descrição Resumida</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>24/09 18:43</td><td>Microsoft-Windows-DistributedCOM</td><td>10010</td><td>O servidor Microsoft.Windows.Search_1.14.18.19041_neutral_neutral_cw5n1h2tx...</td></tr><tr><td>22/09 18:44</td><td>Microsoft-Windows-DistributedCOM</td><td>10010</td><td>O servidor Microsoft.Windows.Search_1.14.18.19041_neutral_neutral_cw5n1h2tx...</td></tr><tr><td>21/09 18:32</td><td>Microsoft-Windows-DistributedCOM</td><td>10010</td><td>O servidor Microsoft.Windows.Search_1.14.18.19041_neutral_neutral_cw5n1h2tx...</td></tr><tr><td>18/09 20:52</td><td>Microsoft-Windows-WindowsUpdateClient</td><td>20</td><td>Falha na Instalação: o Windows não pôde instalar a seguinte atualização com...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Recomendações Técnicas Especializadas</h3>
+            <ul style="padding-left: 20px; color: var(--text-muted); font-size: 14px;">
+                <li>Manter atualizações cumulativas do Windows Update em dia para correções de segurança e estabilidade.</li>
+                <li>Executar periodicamente a otimização de volume TRIM em unidades de estado sólido (SSD) através do Toolkit.</li>
+                <li>Preservar sempre no mínimo 15% a 20% de espaço livre na unidade do sistema operacional para prevenir fragmentação de arquivos temporários e manter o bom funcionamento do pagefile.</li>
+                <li>Evitar o uso de limpadores de registro não certificados pela Microsoft, pois a manipulação de chaves cegas pode corromper referências COM e dependências de serviços.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p><strong>WINDOWS SUPPORT TOOLKIT v1.0</strong> | Desenvolvido por: <strong>Gabriel Souza Barros</strong></p>
+            <p>Relatório confidencial para fins de auditoria e suporte técnico de TI.</p>
+        </footer>
+    </div>
+</body>
+</html>

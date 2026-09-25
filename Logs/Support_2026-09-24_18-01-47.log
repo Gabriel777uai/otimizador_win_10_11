@@ -1,0 +1,272 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20260924180147
+Nome de Usuário: BRASILC\suporte
+Executar como Usuário: BRASILC\suporte
+Nome da Configuração: 
+Computador: TI-004 (Microsoft Windows NT 10.0.19045.0)
+Aplicativo Host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Windows-Support-Toolkit.ps1 -Mode Diagnose -SkipElevationCheck
+ID do Processo: 30420
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[INFO]
+Ambiente do Windows Support Toolkit inicializado com sucesso.
+[WARNING]
+Verificação de privilégio ignorada via parâmetro -SkipElevationCheck.
+True
+======================================================================
+ WINDOWS SUPPORT TOOLKIT
+ Ferramenta Profissional de Suporte Windows
+ Desenvolvido por: Gabriel Souza Barros
+ Versão: 1.0
+======================================================================
+ COMPUTADOR :
+TI-004
+  |  USUÁRIO :
+BRASILC\suporte
+ WINDOWS    :
+Microsoft Windows 10 Pro (64 bits)
+  |  BUILD   :
+19045
+ PROCESSADOR:
+AMD Ryzen 5 4500 6-Core Processor
+ MEMÓRIA    :
+15,8 GB Total (5,7 GB Livre / 64% Usado)
+ UPTIME     :
+9d 9h 55m
+----------------------------------------------------------------------
+
+======================================================================
+  DIAGNÓSTICO COMPLETO DO COMPUTADOR
+======================================================================
+
+[INFO]
+Iniciando diagnóstico estruturado de hardware e sistema operacional.
+ Informações do Sistema Operacional:
+  Sistema Operacional : Microsoft Windows 10 Pro (64 bits)
+  Versão / Build      : 10.0.19045 (Build 19045)
+  Computador          : TI-004
+  Usuário Logado      : BRASILC\suporte
+  Fabricante / Modelo : ASUS / System Product Name
+  Placa-Mãe           : ASUSTeK COMPUTER INC. PRIME A520M-E
+  BIOS                : American Megatrends Inc. 3205 (08/13/2023 21:00:00)
+  Último Boot / Uptime: 09/15/2026 08:06:31 (9d 9h 55m)
+
+ Informações do Processador (CPU):
+  Modelo              : AMD Ryzen 5 4500 6-Core Processor
+  Núcleos Físicos     : 6
+  Threads Lógicos     : 12
+  Carga Atual         : 11%
+
+ Informações de Memória Física (RAM):
+  Capacidade Total    : 15.8 GB
+  Memória Disponível  : 5.67 GB
+  Percentual Utilizado: 64.1%
+
+  Slots de Memória Instalados:
+
+DeviceLocator Manufacturer PartNumber           Capacidade_GB Velocidade_MHz
+------------- ------------ ----------           ------------- --------------
+DIMM_B1       Kingston     KF2666C16D4/16GX                16           2666
+
+
+
+ Adaptadores Gráficos (GPU):
+
+Name                    DriverVersion VRAM_MB
+----                    ------------- -------
+NVIDIA GeForce GTX 1650 32.0.16.1062     4095
+
+
+[OK]
+Diagnóstico básico de hardware e sistema operacional concluído com êxito.
+
+======================================================================
+  DIAGNÓSTICO E SAÚDE DOS DISCOS
+======================================================================
+
+[INFO]
+Verificando unidades físicas, volumes lógicos e contadores S.M.A.R.T.
+ Unidades Físicas Detectadas:
+
+DeviceId FriendlyName        MediaType BusType HealthStatus OperationalStatus Tamanho_GB
+-------- ------------        --------- ------- ------------ ----------------- ----------
+0        KINGSTON SNV2S1000G SSD       NVMe    Healthy      OK                    931,51
+
+
+[OK]
+Disco Físico 0 (KINGSTON SNV2S1000G): Status S.M.A.R.T. Íntegro (Healthy).
+
+ Volumes Lógicos e Espaço em Disco:
+
+DriveLetter FileSystem HealthStatus Total_GB Livre_GB Pct_Livre
+----------- ---------- ------------ -------- -------- ---------
+          C NTFS       Healthy        930,89   586,08        63
+
+
+[OK]
+Volume C: Espaço adequado (586.08 GB livre, 63%).
+
+ Contadores Avançados de Confiabilidade (Storage Reliability):
+ Disco [0] - KINGSTON SNV2S1000G:
+PS>TerminatingError(Get-StorageReliabilityCounter): "O comando em execução parou porque a variável preferencial "ErrorActionPreference" ou o parâmetro comum está definido como Stop: Acesso a um recurso CIM não estava disponível para o cliente."
+   Métricas S.M.A.R.T. avançadas não disponibilizadas pelo driver/controladora.
+
+======================================================================
+  DIAGNÓSTICO TÉCNICO DE MEMÓRIA RAM E PROCESSOS
+======================================================================
+
+[INFO]
+Iniciando diagnóstico detalhado de alocação de memória RAM.
+ Visão Geral da Memória Física:
+  Capacidade Total Instalada: 15,80 GB
+  Memória Livre Disponível  : 5,59 GB
+  Percentual em Utilização  : 64,6%
+
+ ESCLARECIMENTO TÉCNICO PROFISSIONAL:
+  O kernel do Windows gerencia a memória ativamente. Memória em 'Standby' é cache útil
+  que acelera reabertura de programas. Utilitários que prometem 'liberar toda a RAM'
+  forçam esvaziamento para o disco (pagefile), DEGRADANDO a performance real da máquina.
+  Este diagnóstico tem por objetivo localizar processos com potencial vazamento de memória (Memory Leak).
+ Top 25 Processos com Maior Consumo de Memória (Working Set):
+
+Name                           Id RAM_MB Pct_RAM
+----                           -- ------ -------
+opera                        9652 1246,2     7,7
+Antigravity IDE             29676 575,59     3,6
+Memory Compression           1808 567,13     3,5
+chrome                      28156 346,93     2,1
+vmmem                       28268 304,82     1,9
+WhatsApp.Root               24536 301,87     1,9
+Antigravity IDE              9684 250,17     1,5
+opera                       28060 229,88     1,4
+language_server_windows_x64 13204 227,08     1,4
+Antigravity IDE             30968 211,74     1,3
+explorer                    27036 197,75     1,2
+powershell                  30420 176,98     1,1
+chrome                      13696 173,05     1,1
+Antigravity IDE             29212 153,59     0,9
+Antigravity IDE             30792 146,63     0,9
+com.docker.backend          11232 139,66     0,9
+chrome                      11016 137,43     0,8
+Antigravity IDE             13724 136,24     0,8
+language_server_windows_x64 16624 133,68     0,8
+Antigravity IDE             10624 133,58     0,8
+opera                       10212 126,87     0,8
+chrome                      26380 125,55     0,8
+msedgewebview2              24820 124,69     0,8
+NVIDIA Overlay              22004 123,36     0,8
+IriunWebcam                 14268 122,38     0,8
+
+
+
+ Diagnóstico do Arquivo de Paginação (Pagefile):
+
+Name            Tamanho_MB Uso_Atual_MB Pico_MB
+----            ---------- ------------ -------
+C:\pagefile.sys      12800         1022    2747
+
+
+[OK]
+Arquivo de paginação ativo e gerenciado pelo sistema.
+  Aviso: O arquivo de paginação NUNCA deve ser desativado, mesmo com muita RAM física.
+
+======================================================================
+  DIAGNÓSTICO DE PROCESSADOR (CPU) E VÍDEO (GPU)
+======================================================================
+
+[INFO]
+Executando inspeção de CPU e GPU.
+ Processador (CPU):
+  Nome        : AMD Ryzen 5 4500 6-Core Processor
+  Núcleos     : 6 Físicos / 12 Lógicos
+  Carga Atual : 17%
+
+ Top 20 Processos com Maior Tempo de CPU acumulado:
+
+Name                  Id Tempo_CPU_s RAM_MB
+----                  -- ----------- ------
+audiodg             4204      7824,1   13,6
+chrome             13696      3792,9  173,1
+opera               9652      2435,9 1246,6
+msedgewebview2     30344      1462,1   78,5
+chrome             28156      1333,9  346,9
+com.docker.backend 11232       625,7  134,7
+opera              27024       586,7   84,2
+Antigravity IDE    29676       552,2  581,4
+opera              10212         510  126,4
+msedgewebview2      2592       498,1  115,8
+msedgewebview2     24820       415,2  124,7
+mstsc               5748       371,1  113,6
+chrome             14884       345,3   73,1
+explorer           27036       336,7  197,7
+WhatsApp.Root      24536       276,9  301,9
+uihost             11128       239,6   23,3
+opera              28060       205,2  229,9
+nvcontainer        29844       204,9   82,2
+Antigravity IDE    29212         146  153,6
+chrome             26380       142,2  125,6
+
+
+
+ Adaptadores de Vídeo (GPU):
+  Placa   : NVIDIA GeForce GTX 1650
+  Driver  : 32.0.16.1062
+  Status  : OK
+  VRAM    : 4095 MB
+[INFO]
+Diagnóstico de hardware concluído. Drivers não são instalados automaticamente por segurança.
+
+======================================================================
+  DIAGNÓSTICO DE CONECTIVIDADE E REDE
+======================================================================
+
+[INFO]
+Iniciando diagnóstico completo de pilha de rede TCP/IP.
+ Adaptadores de Rede Ativos com IP:
+  Adaptador: Realtek PCIe GbE Family Controller
+   Endereço IPv4   : 10.1.1.133
+   Máscara Sub-rede: 255.255.255.0
+   Gateway Padrão  : 10.1.1.1
+   Servidores DNS  : 10.1.1.5, 10.1.1.50
+   DHCP Ativado    : True
+  Adaptador: Hyper-V Virtual Ethernet Adapter
+   Endereço IPv4   : 172.17.0.1, fe80::79da:7d96:4464:3880
+   Máscara Sub-rede: 255.255.240.0, 64
+   Gateway Padrão  :
+   Servidores DNS  :
+   DHCP Ativado    : False
+  Adaptador: VirtualBox Host-Only Ethernet Adapter
+   Endereço IPv4   : 169.254.213.162, fe80::1f49:b001:4eb4:f62a
+   Máscara Sub-rede: 255.255.0.0, 64
+   Gateway Padrão  :
+   Servidores DNS  :
+   DHCP Ativado    : False
+  Adaptador: Hyper-V Virtual Ethernet Adapter #2
+   Endereço IPv4   : 172.19.80.1, fe80::8be1:f754:a48d:77a5
+   Máscara Sub-rede: 255.255.240.0, 64
+   Gateway Padrão  :
+   Servidores DNS  :
+   DHCP Ativado    : False
+ Teste de Conectividade ICMP (Ping):
+  Testando ping para 8.8.8.8 (Google Public DNS)...
+[OK]
+  Testando ping para 1.1.1.1 (Cloudflare DNS)...
+[OK]
+
+ Teste de Resolução de Nomes (DNS Lookup):
+  Resolvendo google.com...
+[OK] -> 172.217.28.206
+[OK]
+Conectividade de Internet e resolução DNS funcionando normalmente.
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20260924180157
+**********************

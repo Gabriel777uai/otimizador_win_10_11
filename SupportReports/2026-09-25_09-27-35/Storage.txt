@@ -1,0 +1,20 @@
+﻿============================================================
+INFORMAÇÕES DE ARMAZENAMENTO E DISCOS
+============================================================
+DISCOS FÍSICOS:
+
+DeviceId FriendlyName        MediaType HealthStatus Tamanho_GB
+-------- ------------        --------- ------------ ----------
+0        KINGSTON SNV2S1000G SSD       Healthy          931,51
+
+
+
+
+VOLUMES LÓGICOS:
+
+DriveLetter FileSystem HealthStatus Livre_GB Total_GB
+----------- ---------- ------------ -------- --------
+          C NTFS       Healthy        585,15   930,89
+
+
+

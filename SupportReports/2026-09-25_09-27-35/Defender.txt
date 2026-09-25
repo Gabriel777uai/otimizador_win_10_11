@@ -1,0 +1,7 @@
+﻿============================================================
+STATUS DO MICROSOFT DEFENDER
+============================================================
+Serviço do Defender não retornou status.
+
+HISTÓRICO DE AMEAÇAS:
+Nenhum registro recente de ameaça detectada.

@@ -1,0 +1,28 @@
+﻿============================================================
+CONFIGURAÇÃO DE REDE
+============================================================
+
+
+Description          : Realtek PCIe GbE Family Controller
+IPAddress            : {10.1.1.133}
+DefaultIPGateway     : {10.1.1.1}
+DNSServerSearchOrder : {10.1.1.5, 10.1.1.50}
+
+Description          : Hyper-V Virtual Ethernet Adapter
+IPAddress            : {172.17.0.1, fe80::79da:7d96:4464:3880}
+DefaultIPGateway     : 
+DNSServerSearchOrder : 
+
+Description          : VirtualBox Host-Only Ethernet Adapter
+IPAddress            : {169.254.213.162, fe80::1f49:b001:4eb4:f62a}
+DefaultIPGateway     : 
+DNSServerSearchOrder : 
+
+Description          : Hyper-V Virtual Ethernet Adapter #2
+IPAddress            : {172.19.80.1, fe80::8be1:f754:a48d:77a5}
+DefaultIPGateway     : 
+DNSServerSearchOrder : 
+
+
+
+

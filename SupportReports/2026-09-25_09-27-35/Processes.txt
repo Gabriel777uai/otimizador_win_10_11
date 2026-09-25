@@ -1,0 +1,58 @@
+﻿============================================================
+PROCESSOS COM MAIOR CONSUMO DE MEMÓRIA E CPU
+============================================================
+TOP MEMÓRIA:
+
+Name                           Id RAM_MB
+----                           -- ------
+vmmem                       14356 1982,5
+Antigravity IDE             27640  822,1
+chrome                      30508    797
+Code                         8612  560,9
+Memory Compression           1808  504,3
+Code                        23716  383,5
+php                          1456  331,5
+chrome                      30604    325
+msedgewebview2              23732  290,7
+chrome                       5804  235,7
+language_server_windows_x64 10880  224,3
+Antigravity IDE             11188  221,2
+chrome                      23512    217
+WhatsApp.Root                1152  207,5
+Antigravity IDE             26952  195,7
+explorer                    25728  193,8
+chrome                      10992  191,4
+Code                         4032  159,7
+chrome                      30212  152,6
+Code                        14528  151,2
+
+
+
+
+TOP CPU:
+
+Name                                                             Id  CPU_s
+----                                                             --  -----
+audiodg                                                        4204 7917,7
+chrome                                                        30508  268,2
+mstsc                                                         23884  100,4
+msedgewebview2                                                23732   90,4
+Antigravity IDE                                               27640     75
+chrome                                                        30604   55,8
+Code                                                          23716   55,5
+chrome                                                         5804   49,5
+Code                                                           8612   46,2
+msedgewebview2                                                24776   36,5
+chrome                                                        10992   32,7
+explorer                                                      25728   29,7
+chrome                                                        23512   26,9
+Code                                                           6248   25,6
+msedgewebview2                                                 3344   23,3
+CodeSetup-stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1.tmp 24920     22
+AnyDesk                                                        4716   21,8
+Code                                                          25308   19,2
+nvcontainer                                                   27224   16,6
+WhatsApp.Root                                                  1152   16,1
+
+
+

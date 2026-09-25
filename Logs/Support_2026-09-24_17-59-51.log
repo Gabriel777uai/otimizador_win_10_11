@@ -1,0 +1,271 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20260924175951
+Nome de Usuário: BRASILC\suporte
+Executar como Usuário: BRASILC\suporte
+Nome da Configuração: 
+Computador: TI-004 (Microsoft Windows NT 10.0.19045.0)
+Aplicativo Host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Windows-Support-Toolkit.ps1 -Mode Diagnose -SkipElevationCheck
+ID do Processo: 30020
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[INFO]
+Ambiente do Windows Support Toolkit inicializado com sucesso.
+[WARNING]
+Verificação de privilégio ignorada via parâmetro -SkipElevationCheck.
+True
+======================================================================
+ WINDOWS SUPPORT TOOLKIT
+ Ferramenta Profissional de Suporte Windows
+ Desenvolvido por: Gabriel Souza Barros
+ Versão: 1.0
+======================================================================
+ COMPUTADOR :
+TI-004
+  |  USUÁRIO :
+BRASILC\suporte
+ WINDOWS    :
+Microsoft Windows 10 Pro (64 bits)
+  |  BUILD   :
+19045
+ PROCESSADOR:
+AMD Ryzen 5 4500 6-Core Processor
+ MEMÓRIA    :
+15,8 GB Total (4,6 GB Livre / 70,8% Usado)
+ UPTIME     :
+9d 9h 53m
+----------------------------------------------------------------------
+
+======================================================================
+  DIAGNÓSTICO COMPLETO DO COMPUTADOR
+======================================================================
+
+[INFO]
+Iniciando diagnóstico estruturado de hardware e sistema operacional.
+ Informações do Sistema Operacional:
+  Sistema Operacional : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.OSCaption (@{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.OSArch)
+  Versão / Build      : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.OSVersion (Build @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.OSBuild)
+  Computador          : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.ComputerName
+  Usuário Logado      : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CurrentUser
+  Fabricante / Modelo : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.Manufacturer / @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.Model
+  Placa-Mãe           : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.Motherboard
+  BIOS                : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.BiosVendor @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.BiosVersion (@{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.BiosDate)
+  Último Boot / Uptime: @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.LastBootUpTime (@{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.Uptime)
+
+ Informações do Processador (CPU):
+  Modelo              : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuName
+  Núcleos Físicos     : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuCores
+  Threads Lógicos     : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuThreads
+  Carga Atual         : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuLoad%
+
+ Informações de Memória Física (RAM):
+  Capacidade Total    : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.RamTotalGB GB
+  Memória Disponível  : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.RamFreeGB GB
+  Percentual Utilizado: @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=13; RamTotalGB=15.8; RamFreeGB=4.61; RamUsedPercent=70.8; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.RamUsedPercent%
+
+  Slots de Memória Instalados:
+
+DeviceLocator Manufacturer PartNumber           Capacidade_GB Velocidade_MHz
+------------- ------------ ----------           ------------- --------------
+DIMM_B1       Kingston     KF2666C16D4/16GX                16           2666
+
+
+
+ Adaptadores Gráficos (GPU):
+
+Name                    DriverVersion VRAM_MB
+----                    ------------- -------
+NVIDIA GeForce GTX 1650 32.0.16.1062     4095
+
+
+[OK]
+Diagnóstico básico de hardware e sistema operacional concluído com êxito.
+
+======================================================================
+  DIAGNÓSTICO E SAÚDE DOS DISCOS
+======================================================================
+
+[INFO]
+Verificando unidades físicas, volumes lógicos e contadores S.M.A.R.T.
+ Unidades Físicas Detectadas:
+
+DeviceId FriendlyName        MediaType BusType HealthStatus OperationalStatus Tamanho_GB
+-------- ------------        --------- ------- ------------ ----------------- ----------
+0        KINGSTON SNV2S1000G SSD       NVMe    Healthy      OK                    931,51
+
+
+[OK]
+Disco Físico 0 (KINGSTON SNV2S1000G): Status S.M.A.R.T. Íntegro (Healthy).
+
+ Volumes Lógicos e Espaço em Disco:
+
+DriveLetter FileSystem HealthStatus Total_GB Livre_GB Pct_Livre
+----------- ---------- ------------ -------- -------- ---------
+          C NTFS       Healthy        930,89   586,09        63
+
+
+[OK]
+Volume C: Espaço adequado (586.09 GB livre, 63%).
+
+ Contadores Avançados de Confiabilidade (Storage Reliability):
+ Disco [0] - KINGSTON SNV2S1000G:
+PS>TerminatingError(Get-StorageReliabilityCounter): "O comando em execução parou porque a variável preferencial "ErrorActionPreference" ou o parâmetro comum está definido como Stop: Acesso a um recurso CIM não estava disponível para o cliente."
+   Métricas S.M.A.R.T. avançadas não disponibilizadas pelo driver/controladora.
+
+======================================================================
+  DIAGNÓSTICO TÉCNICO DE MEMÓRIA RAM E PROCESSOS
+======================================================================
+
+[INFO]
+Iniciando diagnóstico detalhado de alocação de memória RAM.
+ Visão Geral da Memória Física:
+  Capacidade Total Instalada: 15,80 GB
+  Memória Livre Disponível  : 4,50 GB
+  Percentual em Utilização  : 71,5%
+
+ ESCLARECIMENTO TÉCNICO PROFISSIONAL:
+  O kernel do Windows gerencia a memória ativamente. Memória em 'Standby' é cache útil
+  que acelera reabertura de programas. Utilitários que prometem 'liberar toda a RAM'
+  forçam esvaziamento para o disco (pagefile), DEGRADANDO a performance real da máquina.
+  Este diagnóstico tem por objetivo localizar processos com potencial vazamento de memória (Memory Leak).
+ Top 25 Processos com Maior Consumo de Memória (Working Set):
+
+Name                           Id  RAM_MB Pct_RAM
+----                           --  ------ -------
+opera                        9652 1208,82     7,5
+Antigravity IDE             29676   668,4     4,1
+Memory Compression           1808  530,45     3,3
+msedgewebview2              30344  450,63     2,8
+Postman                     29660  371,85     2,3
+chrome                      28156  347,01     2,1
+dbeaver                     30432  321,81       2
+vmmem                       28268  304,52     1,9
+WhatsApp.Root               24536  299,17     1,8
+Antigravity IDE              9684  246,65     1,5
+opera                       28060  229,72     1,4
+language_server_windows_x64 13204  224,52     1,4
+Antigravity IDE             30968  211,33     1,3
+explorer                    27036  186,07     1,2
+chrome                      13696  172,76     1,1
+powershell                  30020  170,96     1,1
+Antigravity IDE             29212  167,09       1
+Antigravity IDE             30792  146,37     0,9
+com.docker.backend          11232   138,6     0,9
+chrome                      11016  137,43     0,8
+Antigravity IDE             13724  135,72     0,8
+Antigravity IDE             10624  133,57     0,8
+language_server_windows_x64 16624   133,5     0,8
+ShellExperienceHost          7348     131     0,8
+opera                       10212  126,51     0,8
+
+
+
+ Diagnóstico do Arquivo de Paginação (Pagefile):
+
+Name            Tamanho_MB Uso_Atual_MB Pico_MB
+----            ---------- ------------ -------
+C:\pagefile.sys      12800         1231    2747
+
+
+[OK]
+Arquivo de paginação ativo e gerenciado pelo sistema.
+  Aviso: O arquivo de paginação NUNCA deve ser desativado, mesmo com muita RAM física.
+
+======================================================================
+  DIAGNÓSTICO DE PROCESSADOR (CPU) E VÍDEO (GPU)
+======================================================================
+
+[INFO]
+Executando inspeção de CPU e GPU.
+ Processador (CPU):
+  Nome        : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=9; RamTotalGB=15.8; RamFreeGB=4.5; RamUsedPercent=71.5; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuName
+  Núcleos     : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=9; RamTotalGB=15.8; RamFreeGB=4.5; RamUsedPercent=71.5; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuCores Físicos / @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=9; RamTotalGB=15.8; RamFreeGB=4.5; RamUsedPercent=71.5; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuThreads Lógicos
+  Carga Atual : @{ComputerName=TI-004; CurrentUser=BRASILC\suporte; Manufacturer=ASUS; Model=System Product Name; OSCaption=Microsoft Windows 10 Pro; OSVersion=10.0.19045; OSBuild=19045; OSArch=64 bits; LastBootUpTime=09/15/2026 08:06:31; Uptime=9d 9h 53m; CpuName=AMD Ryzen 5 4500 6-Core Processor; CpuCores=6; CpuThreads=12; CpuLoad=9; RamTotalGB=15.8; RamFreeGB=4.5; RamUsedPercent=71.5; BiosVendor=American Megatrends Inc.; BiosVersion=3205; BiosDate=08/13/2023 21:00:00; Motherboard=ASUSTeK COMPUTER INC. PRIME A520M-E; GpuList=System.Object[]}.CpuLoad%
+
+ Top 20 Processos com Maior Tempo de CPU acumulado:
+
+Name                  Id Tempo_CPU_s RAM_MB
+----                  -- ----------- ------
+audiodg             4204      7822,5   13,6
+chrome             13696      3792,8  172,8
+opera               9652      2402,8 1208,8
+msedgewebview2     30344      1461,7  450,8
+chrome             28156      1333,6    347
+com.docker.backend 11232       625,3  138,6
+opera              27024       586,7   84,2
+Antigravity IDE    29676       543,2    672
+opera              10212         510  126,5
+msedgewebview2      2592         498  114,8
+msedgewebview2     24820       414,6  128,2
+mstsc               5748       368,6  108,9
+chrome             14884       345,3   73,2
+explorer           27036       335,7  186,1
+dbeaver            30432       284,2  321,8
+WhatsApp.Root      24536       276,7  299,2
+uihost             11128       239,3   23,2
+opera              28060       204,7  230,4
+nvcontainer        29844       204,7   82,2
+Antigravity IDE    29212       144,1  166,6
+
+
+
+ Adaptadores de Vídeo (GPU):
+  Placa   : NVIDIA GeForce GTX 1650
+  Driver  : 32.0.16.1062
+  Status  : OK
+  VRAM    : 4095 MB
+[INFO]
+Diagnóstico de hardware concluído. Drivers não são instalados automaticamente por segurança.
+
+======================================================================
+  DIAGNÓSTICO DE CONECTIVIDADE E REDE
+======================================================================
+
+[INFO]
+Iniciando diagnóstico completo de pilha de rede TCP/IP.
+ Adaptadores de Rede Ativos com IP:
+  Adaptador: Realtek PCIe GbE Family Controller
+   Endereço IPv4   : 10.1.1.133
+   Máscara Sub-rede: 255.255.255.0
+   Gateway Padrão  : 10.1.1.1
+   Servidores DNS  : 10.1.1.5, 10.1.1.50
+   DHCP Ativado    : True
+  Adaptador: Hyper-V Virtual Ethernet Adapter
+   Endereço IPv4   : 172.17.0.1, fe80::79da:7d96:4464:3880
+   Máscara Sub-rede: 255.255.240.0, 64
+   Gateway Padrão  :
+   Servidores DNS  :
+   DHCP Ativado    : False
+  Adaptador: VirtualBox Host-Only Ethernet Adapter
+   Endereço IPv4   : 169.254.213.162, fe80::1f49:b001:4eb4:f62a
+   Máscara Sub-rede: 255.255.0.0, 64
+   Gateway Padrão  :
+   Servidores DNS  :
+   DHCP Ativado    : False
+  Adaptador: Hyper-V Virtual Ethernet Adapter #2
+   Endereço IPv4   : 172.19.80.1, fe80::8be1:f754:a48d:77a5
+   Máscara Sub-rede: 255.255.240.0, 64
+   Gateway Padrão  :
+   Servidores DNS  :
+   DHCP Ativado    : False
+ Teste de Conectividade ICMP (Ping):
+  Testando ping para 8.8.8.8 (Google Public DNS)...
+[OK]
+  Testando ping para 1.1.1.1 (Cloudflare DNS)...
+[OK]
+
+ Teste de Resolução de Nomes (DNS Lookup):
+  Resolvendo google.com...
+[OK] -> 142.250.78.142
+[OK]
+Conectividade de Internet e resolução DNS funcionando normalmente.
+
+ Opção de Traceroute Rápido:
+

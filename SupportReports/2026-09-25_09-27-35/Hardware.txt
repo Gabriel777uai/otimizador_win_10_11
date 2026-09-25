@@ -1,0 +1,30 @@
+﻿============================================================
+INFORMAÇÕES DE HARDWARE
+============================================================
+PROCESSADOR:
+Nome: AMD Ryzen 5 4500 6-Core Processor
+Núcleos: 6 Físicos / 12 Threads
+Carga Atual: 30%
+
+MEMÓRIA RAM:
+Total: 15.8 GB
+Livre: 2.56 GB
+Utilizada: 83.8%
+
+SLOTS FÍSICOS DE MEMÓRIA:
+
+DeviceLocator Manufacturer PartNumber           Capacidade_GB Velocidade_MHz
+------------- ------------ ----------           ------------- --------------
+DIMM_B1       Kingston     KF2666C16D4/16GX                16           2666
+
+
+
+
+ADAPTADORES DE VÍDEO (GPU):
+
+Name                    DriverVersion VRAM_MB
+----                    ------------- -------
+NVIDIA GeForce GTX 1650 32.0.16.1062     4095
+
+
+
