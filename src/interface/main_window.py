@@ -16,6 +16,7 @@ from src.interface.cleaning_page import CleaningPage
 from src.interface.gaming_page import GamingPage
 from src.interface.performance_lab_page import PerformanceLabPage
 from src.interface.thermal_guard_page import ThermalGuardPage
+from src.interface.windows_background_page import WindowsBackgroundPage
 from src.interface.network_page import NetworkPage
 from src.interface.system_page import SystemPage
 from src.interface.startup_page import StartupPage
@@ -114,13 +115,14 @@ class MainWindow(QMainWindow):
             ("🎮 Otimização para Jogos", 2),
             ("📈 Performance Lab", 3),
             ("🔥 Thermal Guard", 4),
-            ("🌐 Otimização de Rede", 5),
-            ("⚙️ Desempenho do Sistema", 6),
-            ("🚀 Inicialização do Windows", 7),
-            ("🛡️ Auto Recovery Center", 8),
-            ("🩺 Confiabilidade do SO", 9),
-            ("📋 Relatórios e Histórico", 10),
-            ("🔧 Configurações", 11)
+            ("💻 Background Control", 5),
+            ("🌐 Otimização de Rede", 6),
+            ("⚙️ Desempenho do Sistema", 7),
+            ("🚀 Inicialização do Windows", 8),
+            ("🛡️ Auto Recovery Center", 9),
+            ("🩺 Confiabilidade do SO", 10),
+            ("📋 Relatórios e Histórico", 11),
+            ("🔧 Configurações", 12)
         ]
 
         for text, index in nav_items:
@@ -146,7 +148,7 @@ class MainWindow(QMainWindow):
 
         main_layout.addWidget(sidebar)
 
-        # 2. ÁREA CENTRAL (STACKED WIDGET COM AS 12 PÁGINAS ROLÁVEIS)
+        # 2. ÁREA CENTRAL (STACKED WIDGET COM AS 13 PÁGINAS ROLÁVEIS)
         self.pages_stack = QStackedWidget()
 
         self.page_dashboard = DashboardPage()
@@ -154,6 +156,7 @@ class MainWindow(QMainWindow):
         self.page_gaming = GamingPage()
         self.page_performance_lab = PerformanceLabPage()
         self.page_thermal = ThermalGuardPage()
+        self.page_background = WindowsBackgroundPage()
         self.page_network = NetworkPage()
         self.page_system = SystemPage()
         self.page_startup = StartupPage()
@@ -167,6 +170,7 @@ class MainWindow(QMainWindow):
         self.pages_stack.addWidget(self._create_scrollable_page(self.page_gaming))
         self.pages_stack.addWidget(self._create_scrollable_page(self.page_performance_lab))
         self.pages_stack.addWidget(self._create_scrollable_page(self.page_thermal))
+        self.pages_stack.addWidget(self._create_scrollable_page(self.page_background))
         self.pages_stack.addWidget(self._create_scrollable_page(self.page_network))
         self.pages_stack.addWidget(self._create_scrollable_page(self.page_system))
         self.pages_stack.addWidget(self._create_scrollable_page(self.page_startup))

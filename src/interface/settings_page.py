@@ -142,10 +142,10 @@ class SettingsPage(QWidget):
             color: #00d2ff;
             font-size: 12px;
             font-weight: bold;
-            background-color: #070d19;
-            border: 1px solid #1e3a5f;
+            background-color: #0e172a;
+            border: 1px solid #223a5e;
             border-radius: 6px;
-            padding: 8px 12px;
+            padding: 6px 12px;
         """)
         self.lbl_sched_status.setFixedHeight(36)
         col_status.addWidget(lbl_st_h)

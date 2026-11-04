@@ -117,11 +117,11 @@ QLabel.CardSub {
 
 /* CAMPOS DE TEXTO (INPUT) */
 QLineEdit {
-    background-color: #070d19;
-    border: 1px solid #1e3a5f;
+    background-color: #0e172a;
+    border: 1px solid #223a5e;
     border-radius: 6px;
     padding: 7px 12px;
-    color: #ffffff;
+    color: #f8fafc;
     font-size: 13px;
     font-weight: 600;
     min-height: 20px;
@@ -130,22 +130,22 @@ QLineEdit {
 
 QLineEdit:focus {
     border: 1px solid #00d2ff;
-    background-color: #0a1324;
+    background-color: #121f38;
 }
 
 QLineEdit:disabled {
-    background-color: #050811;
+    background-color: #060a14;
     color: #64748b;
     border: 1px solid #111a2e;
 }
 
 /* COMBOBOX (SELECT) */
 QComboBox {
-    background-color: #070d19;
-    border: 1px solid #1e3a5f;
+    background-color: #0e172a;
+    border: 1px solid #223a5e;
     border-radius: 6px;
     padding: 6px 32px 6px 12px;
-    color: #ffffff;
+    color: #f8fafc;
     font-size: 13px;
     font-weight: 600;
     min-height: 22px;
@@ -154,11 +154,11 @@ QComboBox {
 
 QComboBox:focus, QComboBox:hover {
     border: 1px solid #00d2ff;
-    background-color: #0a1324;
+    background-color: #121f38;
 }
 
 QComboBox:disabled {
-    background-color: #050811;
+    background-color: #060a14;
     color: #64748b;
     border: 1px solid #111a2e;
 }
@@ -167,14 +167,14 @@ QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
     width: 28px;
-    border-left: 1px solid #1e3a5f;
-    background-color: #0b1426;
+    border-left: 1px solid #223a5e;
+    background-color: #111e35;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 QComboBox::drop-down:hover {
-    background-color: #12213d;
+    background-color: #182a4d;
 }
 
 QComboBox::down-arrow {
@@ -192,7 +192,7 @@ QComboBox::down-arrow:hover {
 
 QComboBox QAbstractItemView {
     background-color: #0b1324;
-    border: 1px solid #1e3a5f;
+    border: 1px solid #00d2ff;
     border-radius: 6px;
     color: #ffffff;
     selection-background-color: #0f2b48;
@@ -210,7 +210,7 @@ QComboBox QAbstractItemView::item {
 
 QComboBox QAbstractItemView::item:hover {
     background-color: #13233f;
-    color: #ffffff;
+    color: #00d2ff;
 }
 
 QComboBox QAbstractItemView::item:selected {
@@ -221,11 +221,11 @@ QComboBox QAbstractItemView::item:selected {
 
 /* CONTROLES DE DATA / HORA / NÚMEROS (SPINBOX & TIMEEDIT) */
 QTimeEdit, QSpinBox, QDoubleSpinBox, QDateEdit, QDateTimeEdit {
-    background-color: #070d19;
-    border: 1px solid #1e3a5f;
+    background-color: #0e172a;
+    border: 1px solid #223a5e;
     border-radius: 6px;
     padding: 6px 12px;
-    color: #ffffff;
+    color: #f8fafc;
     font-size: 13px;
     font-weight: 600;
     min-height: 22px;
@@ -234,21 +234,21 @@ QTimeEdit, QSpinBox, QDoubleSpinBox, QDateEdit, QDateTimeEdit {
 
 QTimeEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus {
     border: 1px solid #00d2ff;
-    background-color: #0a1324;
+    background-color: #121f38;
 }
 
 QTimeEdit::up-button, QSpinBox::up-button, QDoubleSpinBox::up-button {
     subcontrol-origin: border;
     subcontrol-position: top right;
     width: 22px;
-    border-left: 1px solid #1e3a5f;
-    border-bottom: 1px solid #1e3a5f;
-    background-color: #0d172b;
+    border-left: 1px solid #223a5e;
+    border-bottom: 1px solid #223a5e;
+    background-color: #111e35;
     border-top-right-radius: 5px;
 }
 
 QTimeEdit::up-button:hover, QSpinBox::up-button:hover {
-    background-color: #172a4d;
+    background-color: #182a4d;
 }
 
 QTimeEdit::up-arrow, QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
@@ -263,13 +263,13 @@ QTimeEdit::down-button, QSpinBox::down-button, QDoubleSpinBox::down-button {
     subcontrol-origin: border;
     subcontrol-position: bottom right;
     width: 22px;
-    border-left: 1px solid #1e3a5f;
-    background-color: #0d172b;
+    border-left: 1px solid #223a5e;
+    background-color: #111e35;
     border-bottom-right-radius: 5px;
 }
 
 QTimeEdit::down-button:hover, QSpinBox::down-button:hover {
-    background-color: #172a4d;
+    background-color: #182a4d;
 }
 
 QTimeEdit::down-arrow, QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
@@ -296,17 +296,17 @@ QCheckBox::indicator {
     width: 18px;
     height: 18px;
     border-radius: 4px;
-    border: 1px solid #1e3a5f;
-    background-color: #070d19;
+    border: 1px solid #223a5e;
+    background-color: #0e172a;
 }
 
 QCheckBox::indicator:hover {
     border: 1px solid #00d2ff;
-    background-color: #0b1426;
+    background-color: #121f38;
 }
 
 QCheckBox::indicator:checked {
-    background-color: #0070ba;
+    background-color: #0284c7;
     border: 1px solid #00d2ff;
 }
 
@@ -318,6 +318,43 @@ QScrollArea {
 
 QScrollArea > QWidget > QWidget {
     background: transparent;
+}
+
+/* TAB WIDGET (SUB-ABAS) */
+QTabWidget::pane {
+    border: 1px solid #162032;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 12px;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #070d19;
+    color: #94a3b8;
+    border: 1px solid #162032;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+QTabBar::tab:hover {
+    background-color: #0f1c34;
+    color: #38bdf8;
+    border: 1px solid #00d2ff;
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background-color: #0b1426;
+    color: #00d2ff;
+    border: 1px solid #00d2ff;
+    border-bottom: 2px solid #0b1426;
+    font-weight: 700;
 }
 
 /* BOTÕES DE AÇÃO COM CORES VIVAS */

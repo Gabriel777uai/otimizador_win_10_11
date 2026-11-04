@@ -160,7 +160,94 @@ def rollback_operation(record_id: str) -> Dict[str, Any]:
             update_operation_status(record_id, "ROLLED_BACK")
         return res
 
+    # 4. Estratégia de Restauração de Valor do Registro do Windows
+    elif strategy == "RESTORE_REGISTRY_VALUE":
+        ok, msg = _restore_registry_value(orig)
+        if ok:
+            update_operation_status(record_id, "ROLLED_BACK")
+            return {"success": True, "message": msg}
+        return {"success": False, "message": msg}
+
+    # 5. Estratégia de Restauração de Tipo de Inicialização de Serviço
+    elif strategy == "RESTORE_SERVICE_START_TYPE":
+        svc_name = orig.get("service_name")
+        start_type = orig.get("start_type", "demand")
+        if not svc_name:
+            return {"success": False, "message": "Nome do serviço não especificado."}
+        rc, out, err = run_command(["sc", "config", svc_name, f"start={start_type}"], timeout=15)
+        if rc == 0:
+            update_operation_status(record_id, "ROLLED_BACK")
+            return {"success": True, "message": f"Serviço '{svc_name}' restaurado para inicialização '{start_type}'."}
+        return {"success": False, "message": err or out or "Falha ao reconfigurar serviço via sc.exe."}
+
+    # 6. Estratégia de Restauração de Perfil Completo de Segundo Plano
+    elif strategy == "RESTORE_BACKGROUND_PROFILE":
+        sub_records = orig.get("sub_records", [])
+        reverted_count = 0
+        errors = []
+        for sub_id in sub_records:
+            sub_res = rollback_operation(sub_id)
+            if sub_res.get("success"):
+                reverted_count += 1
+            else:
+                errors.append(f"{sub_id}: {sub_res.get('message')}")
+        
+        if errors and reverted_count == 0:
+            return {"success": False, "message": f"Falha na restauração do perfil: {'; '.join(errors)}"}
+        update_operation_status(record_id, "ROLLED_BACK")
+        return {
+            "success": True,
+            "message": f"Perfil restaurado: {reverted_count} alterações revertidas com sucesso." + (f" ({len(errors)} avisos)" if errors else "")
+        }
+
     return {"success": False, "message": f"Estratégia de rollback '{strategy}' não suportada ou não reversível."}
+
+def _restore_registry_value(orig: Dict[str, Any]) -> tuple[bool, str]:
+    """Restaura valor e tipo exato do Registro do Windows."""
+    import winreg
+    root_str = str(orig.get("root", "HKCU")).upper()
+    hkey_map = {
+        "HKCU": winreg.HKEY_CURRENT_USER,
+        "HKEY_CURRENT_USER": winreg.HKEY_CURRENT_USER,
+        "HKLM": winreg.HKEY_LOCAL_MACHINE,
+        "HKEY_LOCAL_MACHINE": winreg.HKEY_LOCAL_MACHINE
+    }
+    hkey = hkey_map.get(root_str)
+    if not hkey:
+        return False, f"Raiz de registro inválida: {root_str}"
+
+    sub_key = orig.get("sub_key", "")
+    value_name = orig.get("value_name", "")
+    value_data = orig.get("value_data")
+    value_type_str = orig.get("value_type", "REG_DWORD")
+
+    type_map = {
+        "REG_DWORD": winreg.REG_DWORD,
+        "REG_SZ": winreg.REG_SZ,
+        "REG_EXPAND_SZ": winreg.REG_EXPAND_SZ,
+        "REG_MULTI_SZ": winreg.REG_MULTI_SZ,
+        "REG_BINARY": winreg.REG_BINARY
+    }
+    reg_type = type_map.get(value_type_str, winreg.REG_DWORD)
+
+    try:
+        if value_data is None:
+            # O valor original não existia antes da otimização: remove a chave/valor criado
+            try:
+                k = winreg.OpenKey(hkey, sub_key, 0, winreg.KEY_SET_VALUE)
+                winreg.DeleteValue(k, value_name)
+                winreg.CloseKey(k)
+                return True, f"Configuração '{value_name}' removida (revertida para o padrão inexistente)."
+            except FileNotFoundError:
+                return True, f"Configuração '{value_name}' já está no padrão."
+        else:
+            k = winreg.CreateKey(hkey, sub_key)
+            winreg.SetValueEx(k, value_name, 0, reg_type, value_data)
+            winreg.CloseKey(k)
+            return True, f"Configuração '{value_name}' restaurada com sucesso para '{value_data}'."
+    except Exception as e:
+        app_logger.error(f"Erro ao restaurar registro ({root_str}\\{sub_key}\\{value_name}): {e}")
+        return False, f"Erro ao restaurar registro: {e}"
 
 def check_and_recover_interrupted_operations() -> List[Dict[str, Any]]:
     """

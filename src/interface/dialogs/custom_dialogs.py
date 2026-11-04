@@ -215,7 +215,7 @@ class OperationResultDialog(QDialog):
         super().__init__(parent)
         self.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground, True)
-        self.setFixedWidth(580)
+        self.setFixedWidth(620)
 
         self._init_ui(title, message, stats or {})
 
@@ -270,15 +270,16 @@ class OperationResultDialog(QDialog):
         # Grid de Estatísticas em Cards Responsivos (2 colunas para até 4 itens, 3 para mais)
         if stats:
             grid_frame = QFrame()
+            grid_frame.setObjectName("ResultGridFrame")
             grid_frame.setStyleSheet("""
-                QFrame {
-                    background-color: #070d19;
-                    border: 1px solid #162238;
+                QFrame#ResultGridFrame {
+                    background-color: #070e1c;
+                    border: 1px solid #1a2f4c;
                     border-radius: 10px;
-                    padding: 8px;
                 }
             """)
             grid = QGridLayout(grid_frame)
+            grid.setContentsMargins(12, 12, 12, 12)
             grid.setSpacing(10)
 
             items = list(stats.items())
@@ -290,19 +291,21 @@ class OperationResultDialog(QDialog):
                 c = idx % cols
 
                 card = QFrame()
-                card.setStyleSheet("""
-                    QFrame {
+                card.setObjectName(f"ResultCard_{idx}")
+                card.setStyleSheet(f"""
+                    QFrame#ResultCard_{idx} {{
                         background-color: #0c1527;
                         border: 1px solid #1e3a5f;
                         border-radius: 8px;
-                    }
-                    QFrame:hover {
+                    }}
+                    QFrame#ResultCard_{idx}:hover {{
                         border: 1px solid #00d2ff;
                         background-color: #0e1a32;
-                    }
+                    }}
                 """)
+                card.setMinimumHeight(68)
                 cl = QVBoxLayout(card)
-                cl.setContentsMargins(12, 10, 12, 10)
+                cl.setContentsMargins(14, 10, 14, 10)
                 cl.setSpacing(3)
 
                 l_k = QLabel(key.upper())

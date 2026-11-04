@@ -2,10 +2,28 @@
 Módulo de Gerenciamento de Energia do Windows.
 Lista e aplica esquemas oficiais de energia via powercfg sem hacks obscuros.
 """
-from typing import List, Dict, Any
+import re
+from typing import List, Dict, Any, Optional
 from src.utils.logger import app_logger
 from src.utils.command_runner import run_command
 from src.core.safety_manager import safety_manager, RiskLevel
+
+HIGH_PERFORMANCE_GUID = "8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c"
+
+def get_current_power_plan_guid() -> Optional[str]:
+    """Obtém o GUID do esquema de energia atualmente ativo no Windows."""
+    rc, out, _ = run_command(["powercfg", "/getactivescheme"], timeout=8)
+    if rc == 0 and out.strip():
+        match = re.search(r"([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})", out)
+        if match:
+            return match.group(1).lower()
+    return None
+
+get_current_power_plan = get_current_power_plan_guid
+
+def set_high_performance_plan(user_confirmed: bool = False) -> Dict[str, Any]:
+    """Aplica o plano oficial de Alto Desempenho do Windows."""
+    return set_active_power_scheme(HIGH_PERFORMANCE_GUID, user_confirmed=user_confirmed)
 
 def list_power_schemes() -> List[Dict[str, Any]]:
     """Lista todos os esquemas de energia instalados no Windows."""

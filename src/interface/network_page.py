@@ -124,8 +124,8 @@ class NetworkPage(QWidget):
 
         ping_box = QHBoxLayout()
         ping_box.setSpacing(12)
-        lbl_dest = QLabel("Destino:")
-        lbl_dest.setStyleSheet("color: #e2e8f0; font-weight: 600;")
+        lbl_dest = QLabel("Destino do Teste:")
+        lbl_dest.setStyleSheet("color: #e2e8f0; font-weight: 600; font-size: 13px;")
         ping_box.addWidget(lbl_dest)
 
         self.txt_host = QLineEdit("8.8.8.8")
@@ -166,8 +166,8 @@ class NetworkPage(QWidget):
 
         dns_row = QHBoxLayout()
         dns_row.setSpacing(12)
-        lbl_prov = QLabel("Provedor:")
-        lbl_prov.setStyleSheet("color: #e2e8f0; font-weight: 600;")
+        lbl_prov = QLabel("Provedor Recomendado:")
+        lbl_prov.setStyleSheet("color: #e2e8f0; font-weight: 600; font-size: 13px;")
         dns_row.addWidget(lbl_prov)
 
         self.combo_dns = QComboBox()

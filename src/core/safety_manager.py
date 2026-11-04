@@ -73,7 +73,24 @@ CENTRAL_OPERATION_REGISTRY: Dict[str, OperationMetadata] = {
     
     # Operações de Recuperação e Ações Genéricas
     "ROLLBACK_OPERATION": OperationMetadata("ROLLBACK_OPERATION", RiskLevel.LEVEL_2_CONTROLLED, True, "Reversão automática de alterações de sistema", True, "recovery"),
-    "CUSTOM_ACTION": OperationMetadata("CUSTOM_ACTION", RiskLevel.LEVEL_2_CONTROLLED, False, "Ação controlada de teste e manutenção", False, "system")
+    "CUSTOM_ACTION": OperationMetadata("CUSTOM_ACTION", RiskLevel.LEVEL_2_CONTROLLED, False, "Ação controlada de teste e manutenção", False, "system"),
+
+    # Windows Background Control (Etapa 4)
+    "ANALYZE_BACKGROUND_RESOURCES": OperationMetadata("ANALYZE_BACKGROUND_RESOURCES", RiskLevel.LEVEL_1_SAFE, False, "Análise de processos e consumo em segundo plano", True, "background"),
+    "DETECT_WINDOWS_FEATURES": OperationMetadata("DETECT_WINDOWS_FEATURES", RiskLevel.LEVEL_1_SAFE, False, "Detecção de recursos do Windows, IA e Edge", True, "background"),
+    "BEFORE_AFTER_SNAPSHOT": OperationMetadata("BEFORE_AFTER_SNAPSHOT", RiskLevel.LEVEL_1_SAFE, False, "Instantâneo de recursos antes/depois da otimização", True, "background"),
+    "TOGGLE_COPILOT": OperationMetadata("TOGGLE_COPILOT", RiskLevel.LEVEL_2_CONTROLLED, False, "Controle de visibilidade e políticas do Microsoft Copilot", True, "background"),
+    "TOGGLE_RECALL": OperationMetadata("TOGGLE_RECALL", RiskLevel.LEVEL_3_ADVANCED, True, "Configuração de captura e recurso do Windows Recall", True, "background"),
+    "CONFIGURE_EDGE_BACKGROUND": OperationMetadata("CONFIGURE_EDGE_BACKGROUND", RiskLevel.LEVEL_2_CONTROLLED, False, "Controle de Startup Boost e extensões em segundo plano do Edge", True, "background"),
+    "CONFIGURE_TELEMETRY": OperationMetadata("CONFIGURE_TELEMETRY", RiskLevel.LEVEL_2_CONTROLLED, True, "Ajuste de nível de telemetria e coleta opcional de diagnóstico", True, "background"),
+    "CONFIGURE_WIDGETS": OperationMetadata("CONFIGURE_WIDGETS", RiskLevel.LEVEL_2_CONTROLLED, False, "Controle de Widgets, notícias e sugestões promocionais do Windows", True, "background"),
+    "CONFIGURE_GAME_DVR": OperationMetadata("CONFIGURE_GAME_DVR", RiskLevel.LEVEL_2_CONTROLLED, False, "Controle da captura contínua e gravação em segundo plano do Xbox", True, "background"),
+    "CONFIGURE_SEARCH_INDEXING": OperationMetadata("CONFIGURE_SEARCH_INDEXING", RiskLevel.LEVEL_2_CONTROLLED, False, "Exclusão inteligente de pastas de desenvolvimento da indexação", True, "background"),
+    "CONFIGURE_DELIVERY_OPTIMIZATION": OperationMetadata("CONFIGURE_DELIVERY_OPTIMIZATION", RiskLevel.LEVEL_2_CONTROLLED, True, "Controle do modo de entrega P2P do Delivery Optimization", True, "background"),
+    "CONFIGURE_BACKGROUND_APPS": OperationMetadata("CONFIGURE_BACKGROUND_APPS", RiskLevel.LEVEL_2_CONTROLLED, False, "Gerenciamento de permissão de aplicativos em segundo plano", True, "background"),
+    "CONFIGURE_OPTIONAL_SERVICE": OperationMetadata("CONFIGURE_OPTIONAL_SERVICE", RiskLevel.LEVEL_3_ADVANCED, True, "Configuração controlada de inicialização de serviço opcional documentado", True, "background"),
+    "APPLY_OPTIMIZATION_PROFILE": OperationMetadata("APPLY_OPTIMIZATION_PROFILE", RiskLevel.LEVEL_2_CONTROLLED, False, "Aplicação de perfil de otimização de segundo plano com reversão", True, "background"),
+    "ROLLBACK_BACKGROUND_SETTING": OperationMetadata("ROLLBACK_BACKGROUND_SETTING", RiskLevel.LEVEL_2_CONTROLLED, False, "Restauração de configuração de segundo plano pelo ledger", True, "background")
 }
 
 class SafetyManager:
